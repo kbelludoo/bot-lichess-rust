@@ -1,0 +1,26 @@
+[package]
+name = "bot-lichess-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Native Rust Zero-GC Lichess Autonomous Bot & NNUE UCI Engine"
+
+[dependencies]
+tokio = { version = "1", features = ["full", "process"] }
+tokio-stream = "0.1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream", "http2"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1.0"
+futures-util = "0.3"
+warp = "0.3"
+rand = "0.8"
+chrono = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

@@ -1,0 +1,14 @@
+{
+  "token": "lip_YOUR_LICHESS_BOT_TOKEN_HERE",
+  "engine_path": "native",
+  "db_path": "chess.mbvmdb",
+  "move_time_ms": 3000,
+  "skill_level": 20,
+  "mode": "berserk",
+  "accept_rated": true,
+  "accept_casual": true,
+  "auto_learn": true,
+  "auto_match": true,
+  "idle_learn": true,
+  "idle_min_rating": 2200
+}

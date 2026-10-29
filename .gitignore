@@ -1,0 +1,4 @@
+/target
+bot-config.json
+*.key
+*.env

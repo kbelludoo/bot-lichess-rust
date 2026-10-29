@@ -1,0 +1,19 @@
+[Unit]
+Description=Lichess Autonomous Chess Bot (Native Rust Zero-GC Engine)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/bot-lichess-rust
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+Environment=RUST_LOG=info
+Environment=PORT=3016
+Environment=STOCKFISH_PATH=/usr/games/stockfish
+
+[Install]
+WantedBy=multi-user.target
