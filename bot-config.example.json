@@ -1,5 +1,5 @@
 {
-  "token": "lip_YOUR_LICHESS_BOT_TOKEN_HERE",
+  "token": "YOUR_LICHESS_BOT_TOKEN_HERE",
   "engine_path": "native",
   "db_path": "chess.mbvmdb",
   "move_time_ms": 3000,
